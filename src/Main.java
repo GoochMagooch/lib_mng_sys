@@ -35,12 +35,25 @@ public class Main {
                 System.out.println();
                 System.out.print("Enter book to checkout: ");
                 String title = scanner.nextLine();
-                library.bookCheckOut(title);
+                library.titleCheckout(title);
+            } else if (choice == 4) {
+                System.out.println();
+                System.out.print("Enter ISBN of book to checkout: ");
+                int num = scanner.nextInt();
+                library.isbnCheckout(num);
             } else if (choice == 5) {
                 System.out.println();
-                System.out.print("Enter book you're returning: ");
+                System.out.print("Enter title of book you're returning: ");
                 String title = scanner.nextLine();
-                library.bookReturn(title);
+                library.titleReturn(title);
+            } else if (choice == 6) {
+                System.out.println();
+                System.out.print("Enter ISBN of book you're returning: ");
+                int num = scanner.nextInt();
+                library.isbnReturn(num);
+            } else {
+                System.out.println("Invalid choice!");
+                System.out.println("Choose a number between 1 - 6");
             }
 
         }
