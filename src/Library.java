@@ -31,7 +31,7 @@ public class Library {
     }
 
     // Checks out selected book by title
-    public void titleCheckOut(String title) {
+    public void titleCheckout(String title) {
         for (Book book : books) {
             if (book.name.equals(title)) {
                 if (book.isCheckedOut) {
@@ -64,7 +64,7 @@ public class Library {
     }
 
     // Checks out selected book by ISBN
-    public void isbnCheckOut(int num) {
+    public void isbnCheckout(int num) {
         for (Book book : books) {
             if (book.isbn == num) {
                 if (book.isCheckedOut) {
