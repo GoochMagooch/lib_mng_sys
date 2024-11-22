@@ -1,5 +1,5 @@
 public class Book {
-    private String name;
+    public String name;
     private String author;
     private int isbn;
     private boolean isCheckedOut = true;
