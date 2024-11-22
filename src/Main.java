@@ -17,8 +17,7 @@ public class Main {
 
         while (true) {
             if (choice == 1) {
-                mindset.printName();
-            } else {
+                library.displayBooks;
                 return;
             } /* else if (choice == 2) {
                 // changes isCheckedOut to true if book is available and congratulates user
