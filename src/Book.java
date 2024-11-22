@@ -1,8 +1,8 @@
 public class Book {
-    String name;
-    String author;
-    int isbn;
-    boolean isCheckedOut = true;
+    private String name;
+    private String author;
+    private int isbn;
+    private boolean isCheckedOut = true;
 
     public Book(String name, String author, int isbn, boolean isCheckedOut) {
         this.name = name;
@@ -10,11 +10,11 @@ public class Book {
         this.isbn = isbn;
         this.isCheckedOut = isCheckedOut;
     }
-
+    /*
     public void printName() {
         System.out.println(this.name);
     }
-/*
+
     public void bookCheckOut() {
         if (isCheckedOut) {
             System.out.println("This book is already checked out!");
