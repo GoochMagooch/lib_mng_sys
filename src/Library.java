@@ -13,7 +13,11 @@ public class Library {
         };
     }
 
-
+    public void displayBooks() {
+        for (Book book : books) {
+            System.out.println(book.toString());
+        }
+    }
 
 /*
     // prints details of book entry
