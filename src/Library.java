@@ -5,13 +5,16 @@ public class Library {
 
     public Library () {
         books = new Book[] {
-            new Book("Sleep Tight", "J.H Markhert", 0, false);
-            new Book("Salem's Lot", "Stephen King", 1, false);
-            new Book("Company of One", "Paul Jarvis", 2, false);
-            new Book("Mindset", "Carol Dweck", 3, false);
-            new Book("Quiet", "Susan Cain", 4, false);
-        }
+            new Book("Sleep Tight", "J.H Markhert", 0, false),
+            new Book("Salem's Lot", "Stephen King", 1, false),
+            new Book("Company of One", "Paul Jarvis", 2, false),
+            new Book("Mindset", "Carol Dweck", 3, false),
+            new Book("Quiet", "Susan Cain", 4, false)
+        };
     }
+
+
+
 /*
     // prints details of book entry
     public void printBook(Book book) {
@@ -27,9 +30,4 @@ public class Library {
             }
         }
     }*/
-
-    public static void main(String[] args) {
-        
-
-    }
 }
