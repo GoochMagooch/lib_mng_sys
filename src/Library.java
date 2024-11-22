@@ -31,7 +31,7 @@ public class Library {
     }
 
     // Checks out selected book by title
-    public void bookCheckOut(String title) {
+    public void titleCheckOut(String title) {
         for (Book book : books) {
             if (book.name.equals(title)) {
                 if (book.isCheckedOut) {
@@ -50,12 +50,45 @@ public class Library {
     }
 
     // Returns selected book by title
-    public void bookReturn(String title) {
+    public void titleReturn(String title) {
         for (Book book : books) {
             if (book.name.equals(title) && book.isCheckedOut) {
                 book.isCheckedOut = false;
                 System.out.println("Thank you for returning " + book.nameToString() + " by " + book.authorToString() + "!");
             } else if (book.name.equals(title) && book.isCheckedOut == false){
+                System.out.println("This book is not checked out!");
+            } else {
+                continue;
+            }
+        }
+    }
+
+    // Checks out selected book by ISBN
+    public void isbnCheckOut(int num) {
+        for (Book book : books) {
+            if (book.isbn == num) {
+                if (book.isCheckedOut) {
+                    System.out.println("This book is already checked out!");
+                    return;
+                } else {
+                    System.out.println("Congratulations, you have checked out: ");
+                    System.out.println(book.nameToString() + " by author: " + book.authorToString());
+                    book.isCheckedOut = true;
+                    return;
+                }
+            } else {
+                continue;
+            }
+        }
+    }
+
+    // Returns selected book by ISBN
+    public void isbnReturn(int num) {
+        for (Book book : books) {
+            if (book.isbn == num && book.isCheckedOut) {
+                book.isCheckedOut = false;
+                System.out.println("Thank you for returning " + book.nameToString() + " by " + book.authorToString() + "!");
+            } else if (book.isbn == num && book.isCheckedOut == false){
                 System.out.println("This book is not checked out!");
             } else {
                 continue;
