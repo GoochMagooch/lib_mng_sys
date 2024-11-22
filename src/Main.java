@@ -18,6 +18,9 @@ public class Main {
 
         while (true) {
             if (choice == 1) {
+                System.out.println();
+                System.out.println("Please browse our library for a book that suits your interests!");
+                System.out.println();
                 library.displayBooks();
                 return;
             } /* else if (choice == 2) {
