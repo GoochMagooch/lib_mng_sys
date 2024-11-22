@@ -12,10 +12,10 @@ public class Main {
             System.out.println();
             System.out.println("1. Browse our library");
             System.out.println("2. Recieve details of a particular book");
-            System.out.println("3. Return your book by title");
+            System.out.println("3. Checkout a book by title");
             System.out.println("4. Checkout a book with ISBN");
-            System.out.println("5. Checkout a book with title");
-            System.out.println("6. Return your book by ISBN");
+            System.out.println("5. Return your book by title");
+            System.out.println("6. Return your book with ISBN");
             System.out.print("Choose your destiny: ");
         
             int choice = scanner.nextInt();
@@ -31,6 +31,16 @@ public class Main {
                 System.out.print("Enter book title: ");
                 String title = scanner.nextLine();
                 library.bookDetails(title);
+            } else if (choice == 3) {
+                System.out.println();
+                System.out.print("Enter book to checkout: ");
+                String title = scanner.nextLine();
+                library.bookCheckOut(title);
+            } else if (choice == 5) {
+                System.out.println();
+                System.out.print("Enter book you're returning: ");
+                String title = scanner.nextLine();
+                library.bookReturn(title);
             }
 
         }
