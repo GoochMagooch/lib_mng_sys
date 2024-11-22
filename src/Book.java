@@ -19,11 +19,8 @@ public class Book {
             return this.name + " by " + this.author + " - ISBN: " + this.isbn + " - " + "Availability: Checked out";
         }
     }
-    /*
-    public void printName() {
-        System.out.println(this.name);
-    }
 
+    /*
     public void bookCheckOut() {
         if (isCheckedOut) {
             System.out.println("This book is already checked out!");
@@ -44,27 +41,5 @@ public class Book {
             System.out.println("This book is not checked out!");
             return;
         }
-    }
-
-    public void returnName() {
-        String message = "The title of this book is: " + this.name;
-        System.out.println(message);
-    }
-
-    public void availableBook() {
-        if (this.isCheckedOut) {
-            System.out.println("This book is available for checkout!");
-        } else {
-            System.out.println("This book is not available for checkout!");
-        }
-    }
-
-    // prints entire library and its availability
-    public void printLibrary() {
-        for (Book book : library) {
-            System.out.println(book);
-            book.availableBook();
-        }
-    }
-*/
+    }*/
 }
