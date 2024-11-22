@@ -28,7 +28,7 @@ public class Main {
                 System.out.println();
                 System.out.print("Enter book title: ");
                 String title = scanner.nextLine();
-                library.printDetails(title);
+                library.bookDetails(title);
             }
         }
     }
