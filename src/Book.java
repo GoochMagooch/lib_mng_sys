@@ -10,6 +10,15 @@ public class Book {
         this.isbn = isbn;
         this.isCheckedOut = isCheckedOut;
     }
+
+    @Override
+    public String toString() {
+        if (this.isCheckedOut == false) {
+            return this.name + ", " + this.author + ", " + this.isbn + ", " + "this book is not checked out!";
+        } else {
+            return this.name + ", " + this.author + ", " + this.isbn + ", " + "this book is unavailable!";
+        }
+    }
     /*
     public void printName() {
         System.out.println(this.name);
