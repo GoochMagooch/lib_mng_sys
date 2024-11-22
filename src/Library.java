@@ -20,6 +20,15 @@ public class Library {
         }
     }
 
+    // displays details of selected book
+    public void bookDetails(String title) {
+        for (Book book : books) {
+            if (book.name.equals(title)) {
+                System.out.println(book.toString());
+            }
+        }
+    }
+
 /*
     // prints details of book entry
     public void printBook(Book book) {
