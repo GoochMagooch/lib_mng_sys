@@ -14,9 +14,9 @@ public class Book {
     @Override
     public String toString() {
         if (this.isCheckedOut == false) {
-            return this.name + ", " + this.author + ", " + this.isbn + ", " + "this book is not checked out!";
+            return this.name + " by " + this.author + " - ISBN: " + this.isbn + " - " + "Availability: In Stock";
         } else {
-            return this.name + ", " + this.author + ", " + this.isbn + ", " + "this book is unavailable!";
+            return this.name + " by " + this.author + " - ISBN: " + this.isbn + " - " + "Availability: Checked out";
         }
     }
     /*
