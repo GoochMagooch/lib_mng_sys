@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        
         Library library = new Library();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to our Library Management System!");
         
         while (true) {
+        
             System.out.println();
             System.out.println("1. Browse our library");
             System.out.println("2. Recieve details of a particular book");
@@ -15,10 +17,10 @@ public class Main {
             System.out.println("5. Checkout a book with title");
             System.out.println("6. Return your book by ISBN");
             System.out.print("Choose your destiny: ");
+        
             int choice = scanner.nextInt();
             scanner.nextLine();
         
-
             if (choice == 1) {
                 System.out.println();
                 System.out.println("Please browse our library for a book that suits your interests!");
@@ -30,6 +32,7 @@ public class Main {
                 String title = scanner.nextLine();
                 library.bookDetails(title);
             }
+
         }
     }
 }
