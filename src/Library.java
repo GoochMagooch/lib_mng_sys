@@ -28,20 +28,4 @@ public class Library {
             }
         }
     }
-
-/*
-    // prints details of book entry
-    public void printBook(Book book) {
-        if (library.contains(book)) {
-            System.out.println("The details of this book are: ");
-            System.out.println("Title: " + this.name);
-            System.out.println("Author: " + this.author);
-            System.out.println("Isbn: " + this.isbn);
-            if (this.isCheckedOut) {
-                System.out.println("-- This book is unavailable --");
-            } else {
-                System.out.println("-- This book is available --");
-            }
-        }
-    }*/
 }
