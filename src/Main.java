@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Library library = new Library();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to our Library Management System!");
@@ -17,7 +18,7 @@ public class Main {
 
         while (true) {
             if (choice == 1) {
-                library.displayBooks;
+                library.displayBooks();
                 return;
             } /* else if (choice == 2) {
                 // changes isCheckedOut to true if book is available and congratulates user
