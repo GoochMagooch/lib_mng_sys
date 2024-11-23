@@ -1,7 +1,7 @@
 public class Member {
-    String name;
-    int id;
-    String[] borrowedBooks;
+    public String memberName;
+    public int id;
+    public String[] borrowedBooks;
 
     public Member(String name, int id) {
         this.name = name;
