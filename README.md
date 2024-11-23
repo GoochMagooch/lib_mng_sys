@@ -12,18 +12,15 @@ Key Requirements:
 
 Book Class:
 Implement a Book class with attributes like title, author, isbn, and isBorrowed ✅
-Add methods to check whether a book is available and change its status when borrowed/returned ✅
 
 Library Class:
-The Library class should maintain a collection of books. You will need methods for:
 Adding new books to the collection
 Displaying available books ✅
-Borrowing and returning books (updating their status in the system)
+Borrowing and returning books (update book status) ✅
 
 Member Class:
-A Member class to track individual users of the library. Each member should have:
 A unique ID ✅
-A list of borrowed books ✅
+A list of borrowed books 
 Methods to borrow and return books (update both the member’s and library’s status)
 
 Exception Handling:
@@ -33,8 +30,7 @@ Returning a book that was not borrowed ✅
 Adding duplicate books with the same ISBN
 
 Input and Output:
-Allow the user to interact with the program through a menu system in the console (e.g., "Press 1 to borrow a book", 
-"Press 2 to return a book") ✅
+Allow the user to interact with the program through a menu system in the console ✅
 Use basic file I/O to save and load the state of the library (e.g., books, borrowed status) between program runs.
 
 Advanced (Optional Challenge):
