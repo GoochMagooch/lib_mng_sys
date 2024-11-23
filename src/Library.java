@@ -43,8 +43,6 @@ public class Library {
                     book.isCheckedOut = true;
                     return;
                 }
-            } else {
-                continue;
             }
         }
     }
@@ -57,8 +55,6 @@ public class Library {
                 System.out.println("Thank you for returning " + book.nameToString() + " by " + book.authorToString() + "!");
             } else if (book.name.equals(title) && book.isCheckedOut == false){
                 System.out.println("This book is not checked out!");
-            } else {
-                continue;
             }
         }
     }
@@ -76,8 +72,6 @@ public class Library {
                     book.isCheckedOut = true;
                     return;
                 }
-            } else {
-                continue;
             }
         }
     }
@@ -90,8 +84,6 @@ public class Library {
                 System.out.println("Thank you for returning " + book.nameToString() + " by " + book.authorToString() + "!");
             } else if (book.isbn == num && book.isCheckedOut == false){
                 System.out.println("This book is not checked out!");
-            } else {
-                continue;
             }
         }
     }
