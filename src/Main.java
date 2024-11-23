@@ -16,6 +16,7 @@ public class Main {
             System.out.println("4. Checkout a book with ISBN");
             System.out.println("5. Return your book by title");
             System.out.println("6. Return your book with ISBN");
+            System.out.println("Type \"exit\" to exit program");
             System.out.print("Choose your destiny: ");
         
             int choice = scanner.nextInt();
