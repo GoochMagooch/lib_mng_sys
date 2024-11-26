@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         
         Library library = new Library();
+        ReadFile data = new ReadFile();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to our Library Management System!");
         
@@ -37,7 +38,7 @@ public class Main {
                     case 1: 
                         System.out.println("Please browse our library for a book that suits your interests!");
                         System.out.println();
-                        library.displayBooks();
+                        data.getLibrary();
                         break;
                     case 2:
                         System.out.print("Enter book title: ");
