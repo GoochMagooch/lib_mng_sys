@@ -1,0 +1,26 @@
+[
+    {"name": "Sleep Tight",
+     "author":"J.H Markhert",
+     "isbn":0,
+     "isCheckedOut":false},
+
+    {"name":"Salem's Lot",
+     "author":"Stephen King",
+     "isbn":1,
+     "isCheckedOut":false},
+
+    {"name":"Company of One",
+     "author":"Paul Jarvis",
+     "isbn":2,
+     "isCheckedOut":false},
+
+    {"name":"Mindset",
+     "author":"Carol Dweck",
+     "isbn":3,
+     "isCheckedOut":false},
+
+    {"name":"Quiet",
+     "author":"Susan Cain",
+     "isbn":4,
+     "isCheckedOut":false}
+]
