@@ -17,7 +17,7 @@ public class Main {
             String input = scanner.nextLine();
 
             System.out.println();
-            switch (input.toLowerCase()) {
+            String input = switch(input.toLowerCase()) {
             case "exit":
                 System.out.println("Exiting program...");
                 System.exit(0);
