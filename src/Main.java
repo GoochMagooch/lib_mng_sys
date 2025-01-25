@@ -11,26 +11,26 @@ public class Main {
         while (true) {
         
             System.out.println();
-            System.out.println("Enter \"help\" to bring up menu");
+            System.out.println("\"help\" to bring up the menu...");
+            System.out.println("\"exit\" to exit the program...");
             System.out.print("Choose your destiny: ");
         
             String input = scanner.nextLine();
 
             System.out.println();
-            String input = switch(input.toLowerCase()) {
+            switch(input.toLowerCase()) {
             case "exit":
                 System.out.println("Exiting program...");
                 System.exit(0);
                 break;
             case "help":
-                System.out.println("Enter \"exit\" to exit program");
                 System.out.println("1. Browse our library");
                 System.out.println("2. Recieve details of a particular book");
                 System.out.println("3. Checkout a book by title");
                 System.out.println("4. Checkout a book with ISBN");
                 System.out.println("5. Return your book by title");
                 System.out.println("6. Return your book with ISBN");
-                System.out.println("Type \"exit\" to exit program");
+                System.out.println("\"exit\" to exit the program");
                 break;
             default:
                 try {
@@ -75,7 +75,7 @@ public class Main {
                 } catch (NumberFormatException e) {
                     System.out.println("Invalid input: Enter number between 1 and 6, \"help\" to bring up menu, or \"exit\" to exit program!");
                 }
-            }
+            };
         }
     }
 }
