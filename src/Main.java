@@ -76,7 +76,7 @@ public class Main {
                 } catch (NumberFormatException e) {
                     System.out.print("Invalid input: Enter a number between 1 and 6");
                 }
-            };
+            }
         }
     }
 }
