@@ -23,7 +23,7 @@ public class Library {
     // displays details of selected book
     public void bookDetails(String title) {
         for (Book book : books) {
-            if (book.name.equals(title)) {
+            if (book.name.equalsIgnoreCase(title)) {
                 System.out.println(book.toString());
                 return;
             }
@@ -33,7 +33,7 @@ public class Library {
     // Checks out selected book by title
     public void titleCheckout(String title) {
         for (Book book : books) {
-            if (book.name.equals(title)) {
+            if (book.name.equalsIgnoreCase(title)) {
                 if (book.isCheckedOut) {
                     System.out.println("This book is already checked out!");
                     return;
@@ -50,7 +50,7 @@ public class Library {
     // Returns selected book by title
     public void titleReturn(String title) {
         for (Book book : books) {
-            if (book.name.equals(title) && book.isCheckedOut) {
+            if (book.name.equalsIgnoreCase(title) && book.isCheckedOut) {
                 book.isCheckedOut = false;
                 System.out.println("Thank you for returning " + book.nameToString() + " by " + book.authorToString() + "!");
             } else if (book.name.equals(title) && book.isCheckedOut == false){
